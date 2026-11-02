@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Alaska.Land Snow Plowing</title>
+<meta name="description" content="Snow plowing for extended driveways, private roads and rural access from Trapper Creek to Wasilla, Alaska. $100 an hour, one-hour minimum, V-plow, up to 3 ft of snow.">
+<link rel="canonical" href="https://www.alaska.land/">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"Alaska.Land Snow Plowing","url":"https://www.alaska.land/","email":"Joshua@alaska.land","telephone":"+1-360-764-0742","address":{"@type":"PostalAddress","addressLocality":"Trapper Creek","addressRegion":"AK","addressCountry":"US"},"areaServed":["Trapper Creek","Talkeetna","Willow","Sunshine","Montana Creek","Big Lake","Houston","Wasilla"],"priceRange":"$100 per hour","description":"Snow plowing for extended driveways, private roads and rural access."}
+</script>
+</head>
+<body>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oxanium:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+/* Layout: a night-sky hero with an aurora wash and a frosted spec panel, a live rate ribbon, glass service cards, a route strip for the service area, and a contact dock. */
+:root {
+  --bg: #eef5f8;
+  --surface: rgba(255, 255, 255, .62);
+  --surface-strong: #ffffff;
+  --line: rgba(10, 36, 48, .14);
+  --text: #0b1d27;
+  --text-soft: #4b6372;
+  --glacier: #0f7fa8;
+  --aurora: #13a77a;
+  --violet: #6a52d9;
+  --night: #07131b;
+  --night-text: #e8f6fb;
+  --glow: rgba(19, 167, 122, .35);
+  --display: "Oxanium", "Eurostile", "Arial Narrow", sans-serif;
+  --body: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #050c12;
+    --surface: rgba(18, 36, 46, .6);
+    --surface-strong: #0e1f29;
+    --line: rgba(160, 230, 255, .14);
+    --text: #e8f6fb;
+    --text-soft: #94b3c2;
+    --glacier: #7ad7ff;
+    --aurora: #5ef2b4;
+    --violet: #b3a2ff;
+    --night: #040a0f;
+    --night-text: #e8f6fb;
+    --glow: rgba(94, 242, 180, .3);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #050c12;
+  --surface: rgba(18, 36, 46, .6);
+  --surface-strong: #0e1f29;
+  --line: rgba(160, 230, 255, .14);
+  --text: #e8f6fb;
+  --text-soft: #94b3c2;
+  --glacier: #7ad7ff;
+  --aurora: #5ef2b4;
+  --violet: #b3a2ff;
+  --night: #040a0f;
+  --night-text: #e8f6fb;
+  --glow: rgba(94, 242, 180, .3);
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--body);
+  font-size: 1rem;
+  line-height: 1.6;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+.wrap { max-width: 60rem; margin: 0 auto; }
+h1, h2, h3 { font-family: var(--display); font-weight: 700; letter-spacing: .01em; line-height: 1.1; margin: 0 0 .6rem; text-wrap: balance; }
+h1 { font-size: clamp(2.4rem, 8vw, 4.4rem); }
+h2 { font-size: clamp(1.6rem, 4vw, 2.1rem); }
+h3 { font-size: 1.2rem; }
+p { margin: 0 0 1rem; max-width: 62ch; }
+.eyebrow { font-family: var(--display); font-size: .85rem; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: var(--aurora); margin: 0 0 1rem; }
+
+.hero {
+  position: relative;
+  color: var(--night-text);
+  background:
+    radial-gradient(60% 80% at 85% 0%, rgba(94, 242, 180, .32), transparent 60%),
+    radial-gradient(50% 70% at 0% 100%, rgba(122, 215, 255, .28), transparent 60%),
+    linear-gradient(180deg, #0a1c27 0%, var(--night) 100%);
+  padding-block: 4.5rem 4rem;
+  overflow: hidden;
+}
+.flag { position: absolute; right: -6%; top: 50%; transform: translateY(-50%); width: min(92vw, 620px); height: auto; opacity: .13; pointer-events: none; z-index: 0; }
+.hero .wrap { position: relative; z-index: 1; }
+.hero::after {
+  content: "";
+  position: absolute; inset: auto 0 0 0; height: 1px;
+  background: linear-gradient(90deg, transparent, var(--aurora), transparent);
+  opacity: .6;
+}
+.hero .wrap { display: grid; gap: 2rem; }
+@media (min-width: 52rem) { .hero .wrap { grid-template-columns: 1.3fr 1fr; align-items: end; } }
+.hero .lede { font-size: 1.12rem; color: #bcd6e2; max-width: 46ch; }
+.url { font-family: var(--display); font-size: 1rem; letter-spacing: .06em; color: var(--glacier); margin: 1.2rem 0 0; }
+.call-btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  margin-top: 1.25rem; padding: .9rem 1.6rem; border-radius: 999px;
+  background: var(--aurora); color: var(--night);
+  font-family: var(--display); font-size: 1.1rem; font-weight: 700; letter-spacing: .03em;
+  text-decoration: none; box-shadow: 0 0 28px var(--glow);
+}
+.call-btn:hover { filter: brightness(1.08); }
+.call-btn.alt { background: transparent; color: var(--aurora); border: 1px solid var(--aurora); box-shadow: none; margin-left: .75rem; }
+.panel {
+  background: rgba(255, 255, 255, .06);
+  border: 1px solid rgba(160, 230, 255, .18);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  padding: 1.25rem 1.3rem;
+  display: grid;
+  gap: .9rem;
+  border-radius: 14px;
+}
+.panel dl { display: grid; grid-template-columns: 1fr 1fr; gap: .9rem 1rem; margin: 0; }
+.panel dt { font-family: var(--display); font-size: .75rem; letter-spacing: .14em; text-transform: uppercase; color: #8fb3c4; }
+.panel dd { margin: 0; font-family: var(--display); font-size: 1.15rem; font-weight: 600; color: var(--night-text); }
+
+.ribbon {
+  background: var(--surface-strong);
+  border-block: 1px solid var(--line);
+  padding-block: .9rem;
+}
+.ribbon .wrap { display: flex; flex-wrap: wrap; gap: .6rem 1.4rem; font-family: var(--display); font-size: 1rem; font-weight: 600; letter-spacing: .04em; }
+.ribbon span::before { content: ""; display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--aurora); box-shadow: 0 0 12px var(--glow); margin-right: .55rem; vertical-align: middle; }
+
+section { padding-block: 3.5rem; }
+.grid { display: grid; gap: 1rem; grid-template-columns: 1fr; list-style: none; padding: 0; margin: 0; }
+@media (min-width: 42rem) { .grid { grid-template-columns: 1fr 1fr; } }
+.card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 1.4rem;
+  min-width: 0;
+  transition: border-color .25s ease, transform .25s ease;
+}
+.card:hover { border-color: var(--aurora); transform: translateY(-2px); }
+.card p { color: var(--text-soft); margin: 0; }
+.card .tag { display: inline-block; font-family: var(--display); font-size: .72rem; letter-spacing: .14em; text-transform: uppercase; color: var(--aurora); margin-bottom: .6rem; }
+
+.split { display: grid; gap: 2rem; grid-template-columns: 1fr; align-items: center; }
+@media (min-width: 52rem) { .split { grid-template-columns: 1fr 1fr; } }
+.photo { margin: 0; min-width: 0; }
+.photo img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 16px; border: 1px solid var(--line); }
+.photo figcaption { font-family: var(--display); font-size: .8rem; letter-spacing: .12em; text-transform: uppercase; color: var(--text-soft); margin-top: .6rem; }
+.gallery { display: grid; gap: 1rem; grid-template-columns: 1fr; }
+@media (min-width: 42rem) { .gallery { grid-template-columns: 1.6fr 1fr; } }
+
+.specs { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 0; }
+.specs div { border-top: 1px solid var(--line); padding-top: .8rem; }
+.specs dt { font-family: var(--display); font-size: .72rem; letter-spacing: .14em; text-transform: uppercase; color: var(--text-soft); }
+.specs dd { margin: .2rem 0 0; font-family: var(--display); font-size: 1.15rem; font-weight: 600; }
+
+.route { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem; list-style: none; padding: 0; margin: 0; }
+.route li {
+  font-family: var(--display); font-weight: 600; letter-spacing: .04em;
+  padding: .55rem 1rem; border-radius: 999px;
+  border: 1px solid var(--line); background: var(--surface);
+}
+.route li:first-child, .route li:last-child { border-color: var(--aurora); box-shadow: 0 0 18px var(--glow); }
+.route li + li::before { content: "→"; color: var(--glacier); margin-right: .6rem; }
+
+.faq details { border-bottom: 1px solid var(--line); padding-block: 1rem; }
+.faq summary { font-family: var(--display); font-size: 1.1rem; font-weight: 600; cursor: pointer; list-style: none; display: flex; justify-content: space-between; gap: 1rem; }
+.faq summary::after { content: "+"; color: var(--aurora); font-size: 1.4rem; line-height: 1; }
+.faq details[open] summary::after { content: "−"; }
+.faq details p { margin: .7rem 0 0; color: var(--text-soft); }
+
+.dock {
+  background:
+    radial-gradient(70% 120% at 100% 0%, rgba(122, 215, 255, .22), transparent 60%),
+    var(--night);
+  color: var(--night-text);
+  border-radius: 20px;
+  padding: 2rem 1.5rem;
+}
+.dock dl { display: grid; grid-template-columns: max-content 1fr; gap: .8rem 1.4rem; margin: 0; }
+.dock dt { font-family: var(--display); font-size: .78rem; letter-spacing: .14em; text-transform: uppercase; color: #8fb3c4; align-self: center; }
+.dock dd { margin: 0; min-width: 0; overflow-wrap: anywhere; font-family: var(--display); font-size: 1.1rem; font-weight: 600; }
+.dock a { color: var(--aurora); text-decoration: none; border-bottom: 1px solid rgba(94, 242, 180, .4); }
+.dock a:hover { border-bottom-color: var(--aurora); }
+footer { padding-block: 2.5rem 3rem; font-size: .85rem; color: var(--text-soft); font-family: var(--display); letter-spacing: .06em; }
+
+a:focus-visible, summary:focus-visible { outline: 2px solid var(--aurora); outline-offset: 3px; }
+@media (prefers-reduced-motion: reduce) { .card { transition: none; } }
+</style>
+
+<header class="hero">
+  <svg class="flag" aria-hidden="true" viewBox="0 0 300 200" preserveAspectRatio="xMidYMid slice">
+    <defs>
+      <polygon id="star" points="0,-6 1.47,-2.02 5.71,-1.85 2.38,0.77 3.53,4.85 0,2.5 -3.53,4.85 -2.38,0.77 -5.71,-1.85 -1.47,-2.02"/>
+    </defs>
+    <path d="M0 0 Q75 12 150 0 T300 0 L300 200 Q225 188 150 200 T0 200 Z" fill="#1f4fa3"/>
+    <g fill="#f5c542">
+      <use href="#star" transform="translate(44 44) scale(1.6)"/>
+      <use href="#star" transform="translate(120 128) scale(1.3)"/>
+      <use href="#star" transform="translate(150 112) scale(1.3)"/>
+      <use href="#star" transform="translate(176 98) scale(1.3)"/>
+      <use href="#star" transform="translate(200 88) scale(1.3)"/>
+      <use href="#star" transform="translate(212 118) scale(1.3)"/>
+      <use href="#star" transform="translate(186 126) scale(1.3)"/>
+      <use href="#star" transform="translate(160 142) scale(1.3)"/>
+    </g>
+  </svg>
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Trapper Creek · Wasilla · Mat-Su</p>
+      <h1>Alaska.Land<br>Snow Plowing</h1>
+      <p class="lede">Extended driveways, private roads, and rural access. Heavy-duty truck with a V-plow, pushing up to 3 ft of snow, billed at $100 an hour.</p>
+      <p class="url">www.alaska.land</p>
+      <a class="call-btn" href="tel:+13607640742">Call now</a>
+    </div>
+    <aside class="panel" aria-label="Service summary">
+      <dl>
+        <div><dt>Rate</dt><dd>$100 / hr</dd></div>
+        <div><dt>Minimum</dt><dd>1 hour</dd></div>
+        <div><dt>Snow depth</dt><dd>Up to 3 ft</dd></div>
+        <div><dt>Based in</dt><dd>Trapper Creek</dd></div>
+      </dl>
+    </aside>
+  </div>
+</header>
+
+<div class="ribbon">
+  <div class="wrap">
+    <span>Extended driveways</span>
+    <span>Private roads</span>
+    <span>New lanes cut in</span>
+    <span>Trapper Creek to Wasilla</span>
+  </div>
+</div>
+
+<main class="wrap">
+  <section>
+    <p class="eyebrow">Services</p>
+    <h2>Plowing for the places others skip</h2>
+    <ul class="grid">
+      <li class="card">
+        <span class="tag">Primary</span>
+        <h3>Extended driveway plowing</h3>
+        <p>Extended rural driveways cleared from the road to the house, so you can get out when you need to.</p>
+      </li>
+      <li class="card">
+        <span class="tag">Roads</span>
+        <h3>Private road plowing</h3>
+        <p>Private roads and shared access routes kept open through the season.</p>
+      </li>
+      <li class="card">
+        <span class="tag">New work</span>
+        <h3>Lanes cut in</h3>
+        <p>New lanes cut through deep snow on private driveways and roads, plus turnarounds and property entrances on acreage and off-grid lots.</p>
+      </li>
+      <li class="card">
+        <span class="tag">Booking</span>
+        <h3>Scheduling and storms</h3>
+        <p>Book by email or phone. On storm days, jobs are routed by location to keep travel short, and you'll get an estimated arrival when you book.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="split">
+    <div>
+      <p class="eyebrow">Equipment</p>
+      <h2>Built for deep snow and long runs</h2>
+      <p>A heavy-duty truck and V-plow pushes large volumes of snow, including up to 3 ft, and cuts new lanes where none exist yet.</p>
+      <dl class="specs">
+        <div><dt>Truck</dt><dd>GMC Sierra 3500 HD</dd></div>
+        <div><dt>Plow</dt><dd>V-plow</dd></div>
+        <div><dt>Snow depth</dt><dd>Up to 3 ft</dd></div>
+        <div><dt>Rate</dt><dd>$100 / hr</dd></div>
+      </dl>
+    </div>
+    <figure class="photo">
+      <img src="photos/truck-plow.jpg" alt="GMC Sierra 3500 HD with V-plow parked in a snowy clearing">
+      <figcaption>GMC Sierra 3500 HD · V-plow</figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <p class="eyebrow">On the job</p>
+    <h2>Watch the work</h2>
+    <video controls playsinline preload="metadata" poster="video/poster.jpg" style="display:block;width:100%;height:auto;border-radius:16px;border:1px solid var(--line)" aria-label="Plow truck clearing a snowy road">
+      <source src="video/plow-action.mp4" type="video/mp4">
+    </video>
+  </section>
+
+  <section>
+    <p class="eyebrow">Service area</p>
+    <h2>Trapper Creek to Wasilla</h2>
+    <p>We plow across the general area from Trapper Creek to Wasilla, including Talkeetna. If you're not sure you're in range, send the address and we'll confirm.</p>
+    <figure style="margin:1.5rem 0 0">
+      <svg viewBox="-60 -60 120 120" role="img" aria-label="Schematic map of the service area: a circle covering Trapper Creek, Talkeetna, Houston, Big Lake and Wasilla" style="width:100%;max-width:28rem;height:auto;display:block;margin:0 auto">
+        <rect x="-60" y="-60" width="120" height="120" rx="10" style="fill:#0d2129"/>
+        <path d="M-60 -6 Q-30 -12 0 -4 T60 -8" fill="none" style="stroke:var(--ice);stroke-width:.8;opacity:.5"/>
+        <path d="M-60 14 Q-20 8 10 16 T60 12" fill="none" style="stroke:var(--ice);stroke-width:.8;opacity:.35"/>
+        <circle cx="0" cy="0" r="40" style="fill:var(--aurora);fill-opacity:.12;stroke:var(--aurora);stroke-width:1.2;stroke-dasharray:3 2"/>
+        <circle cx="-9" cy="-25" r="1.8" style="fill:var(--aurora)"/>
+        <circle cx="-14" cy="-21" r="1.6" style="fill:var(--aurora)"/>
+        <circle cx="0" cy="22" r="1.6" style="fill:var(--aurora)"/>
+        <circle cx="-3" cy="30" r="1.6" style="fill:var(--aurora)"/>
+        <circle cx="12" cy="25" r="1.8" style="fill:var(--aurora)"/>
+        <circle cx="-8" cy="14" r="1.5" style="fill:var(--aurora)"/>
+        <circle cx="-12" cy="-12" r="1.5" style="fill:var(--aurora)"/>
+        <circle cx="-9" cy="-9" r="1.5" style="fill:var(--aurora)"/>
+        <g style="fill:#f2fbf7;stroke:#0d2129;stroke-width:1.2;paint-order:stroke;font-family:Arial,sans-serif;font-size:4px">
+          <text x="-9" y="-29" text-anchor="middle">Trapper Creek</text>
+          <text x="-19" y="-17" text-anchor="end">Talkeetna</text>
+          <text x="-4" y="22" text-anchor="end">Houston</text>
+          <text x="-6" y="34" text-anchor="middle">Big Lake</text>
+          <text x="16" y="29" text-anchor="start">Wasilla</text>
+          <text x="-11" y="15" text-anchor="end">Willow</text>
+          <text x="-15" y="-11" text-anchor="end">Sunshine</text>
+          <text x="-6" y="-7" text-anchor="start">Montana Creek</text>
+        </g>
+        <text x="0" y="55" text-anchor="middle" style="fill:#9fb6b0;font-family:Arial,sans-serif;font-size:3.2px">Schematic, not to scale</text>
+      </svg>
+    </figure>
+    <ul class="route" aria-label="Service route">
+      <li>Wasilla</li>
+      <li>Big Lake</li>
+      <li>Houston</li>
+      <li>Trapper Creek</li>
+      <li>Talkeetna</li>
+    </ul>
+  </section>
+
+  <section>
+    <p class="eyebrow">Pricing</p>
+    <h2>$100 an hour</h2>
+    <p>One-hour minimum. Billing runs hourly after the first hour.</p>
+    <p><strong>10% off</strong> for senior citizens and recurring contracts.</p>
+  </section>
+
+  <section class="split">
+    <figure class="photo">
+      <img src="photos/owner.jpg" alt="The owner in a high-visibility vest on a road with mountains in the distance">
+      <figcaption>The owner, on the job</figcaption>
+    </figure>
+    <div>
+      <p class="eyebrow">Who's plowing</p>
+      <h2>One person, not a crew</h2>
+      <p>Alaska.Land is run by the owner. You deal with him directly, from the first call to the last pass.</p>
+      <p>Background in construction, blueprint work, and property inspection. Plowing is the main job, and extended driveways are the specialty.</p>
+    </div>
+  </section>
+
+  <section>
+    <p class="eyebrow">Reviews</p>
+    <h2>4.7 stars on Google</h2>
+    <p><a class="call-btn alt" href="reviews.html" style="margin-left:0;margin-top:.25rem;color:var(--text);border-color:var(--text)">Read all five-star reviews</a></p>
+    <ul class="grid">
+      <li class="card">
+        <h3>William W.</h3>
+        <p>"Josh is the most reliable snow plow person I have ever dealt with. He is efficient, responds quickly and does marvelous work on my long driveway!!!"</p>
+      </li>
+      <li class="card">
+        <h3>Jeslyn W.</h3>
+        <p>"He was incredibly quick and did an amazing job on my drive way! 10/10 would call him again!"</p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="faq">
+    <p class="eyebrow">Questions</p>
+    <h2>Good to know</h2>
+    <details>
+      <summary>How do I book?</summary>
+      <p>Email or call. Send the driveway address, how long the driveway or road is, and how often you want service.</p>
+    </details>
+    <details>
+      <summary>Do you plow after every snowfall?</summary>
+      <p>Service is scheduled per property. Tell us how often you need plowing and we'll set up a plan that fits.</p>
+    </details>
+    <details>
+      <summary>Do you serve areas outside Wasilla to Trapper Creek?</summary>
+      <p>Not on the regular route. Send the address and we'll let you know whether we can take it.</p>
+    </details>
+  </section>
+
+  <section class="dock-wrap">
+    <div class="dock">
+      <p class="eyebrow" style="color:var(--aurora)">Contact</p>
+      <h2 style="color:var(--night-text)">Book a plow</h2>
+      <p style="color:#bcd6e2;max-width:48ch">Need a plow on a set schedule? For businesses and recurring contracts, email us.</p>
+      <a class="call-btn alt" href="mailto:Joshua@alaska.land">Email for recurring contracts</a>
+      <dl>
+        <dt>Phone</dt>
+        <dd><a href="tel:+13607640742">Call now</a></dd>
+        <dt>Email</dt>
+        <dd><a href="mailto:Joshua@alaska.land">Joshua@alaska.land</a></dd>
+        <dt>Based in</dt>
+        <dd>Trapper Creek, Alaska</dd>
+        <dt>Web</dt>
+        <dd>www.alaska.land</dd>
+      </dl>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">Alaska.Land · Trapper Creek, Alaska · www.alaska.land</div>
+</footer>
+</body>
+</html>

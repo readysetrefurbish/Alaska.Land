@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Alaska.Land Reviews</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oxanium:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+/* Layout: a night header with the overall rating, then a single column of five-star review cards. */
+:root {
+  --bg: #eef5f8;
+  --surface: #ffffff;
+  --line: rgba(10, 36, 48, .14);
+  --text: #0b1d27;
+  --text-soft: #4b6372;
+  --aurora: #13a77a;
+  --night: #07131b;
+  --night-text: #e8f6fb;
+  --display: "Oxanium", "Eurostile", "Arial Narrow", sans-serif;
+  --body: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #050c12;
+    --surface: #0e1f29;
+    --line: rgba(160, 230, 255, .14);
+    --text: #e8f6fb;
+    --text-soft: #94b3c2;
+    --aurora: #5ef2b4;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #050c12;
+  --surface: #0e1f29;
+  --line: rgba(160, 230, 255, .14);
+  --text: #e8f6fb;
+  --text-soft: #94b3c2;
+  --aurora: #5ef2b4;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--body);
+  line-height: 1.6;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+.wrap { max-width: 44rem; margin: 0 auto; }
+header { background: var(--night); color: var(--night-text); padding-block: 3rem 2.5rem; }
+.eyebrow { font-family: var(--display); font-size: .8rem; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: var(--aurora); margin: 0 0 .8rem; }
+h1 { font-family: var(--display); font-size: clamp(2rem, 7vw, 3rem); margin: 0 0 .6rem; line-height: 1.1; }
+.rating { font-family: var(--display); font-size: 1.1rem; margin: 0 0 1.4rem; color: #bcd6e2; }
+.back { display: inline-block; font-family: var(--display); font-weight: 600; letter-spacing: .04em; color: var(--night); background: var(--aurora); padding: .7rem 1.3rem; border-radius: 999px; text-decoration: none; }
+.back:hover { filter: brightness(1.08); }
+main { padding-block: 2.5rem 3rem; display: grid; gap: 1rem; }
+.review { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 1.25rem 1.3rem; min-width: 0; }
+.stars { color: var(--aurora); letter-spacing: .12em; font-size: 1rem; margin: 0 0 .5rem; }
+.review blockquote { margin: 0 0 .8rem; color: var(--text); }
+.review cite { font-family: var(--display); font-style: normal; font-weight: 600; font-size: .95rem; letter-spacing: .03em; color: var(--text-soft); }
+.review cite .when { font-weight: 500; opacity: .8; }
+.reply { margin: .8rem 0 0; padding-left: .9rem; border-left: 2px solid var(--aurora); color: var(--text-soft); font-size: .95rem; }
+.reply strong { font-family: var(--display); color: var(--text); font-weight: 600; letter-spacing: .03em; }
+footer { padding-block: 2rem 3rem; font-family: var(--display); font-size: .85rem; letter-spacing: .06em; color: var(--text-soft); }
+a:focus-visible { outline: 2px solid var(--aurora); outline-offset: 3px; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <p class="eyebrow">Alaska.Land · Reviews</p>
+    <h1>Five-star reviews</h1>
+    <p class="rating">4.7 stars from 12 Google reviews</p>
+    <a class="back" href="index.html">Back to Alaska.Land</a>
+  </div>
+</header>
+
+<main class="wrap">
+  <article class="review">
+    <p class="stars" aria-label="5 stars">★★★★★</p>
+    <blockquote>"Josh is the most reliable snow plow person I have ever dealt with. He is efficient, responds quickly and does marvelous work on my long driveway!!!"</blockquote>
+    <cite>William W. <span class="when">· 2 years ago</span></cite>
+  </article>
+
+  <article class="review">
+    <p class="stars" aria-label="5 stars">★★★★★</p>
+    <blockquote>"He was incredibly quick and did an amazing job on my drive way! 10/10 would call him again!"</blockquote>
+    <cite>Jeslyn W. <span class="when">· 9 months ago</span></cite>
+  </article>
+
+  <article class="review">
+    <p class="stars" aria-label="5 stars">★★★★★</p>
+    <blockquote>"Beyond thankful for how responsive, quick, and mindful this service was. He was very kind &amp; he did an AMAZING job on the driveway. Worth every penny &amp; will 100% be using again!..."</blockquote>
+    <cite>Abbey H. <span class="when">· 3 years ago</span></cite>
+    <p class="reply"><strong>Owner reply:</strong> Just doing my job mam!</p>
+  </article>
+
+  <article class="review">
+    <p class="stars" aria-label="5 stars">★★★★★</p>
+    <blockquote>"After the windstorm in January our driveway was completely inaccessible. They got back to us right away, had the drive way plowed with in hours of my call, and did a fantastic job. Will absolutely use Alaska.Land in the future..."</blockquote>
+    <cite>Sara H. <span class="when">· 4 years ago</span></cite>
+    <p class="reply"><strong>Owner reply:</strong> Thank you for such a welcoming review I'm happy to be in your neck of the woods doing my part.</p>
+  </article>
+
+  <article class="review">
+    <p class="stars" aria-label="5 stars">★★★★★</p>
+    <blockquote>"Josh did an amazing job plowing my driveway! He was on time, professional and I will be certainly using his service again!..."</blockquote>
+    <cite>TJ, Local Guide <span class="when">· 3 years ago</span></cite>
+  </article>
+
+  <article class="review">
+    <p class="stars" aria-label="5 stars">★★★★★</p>
+    <blockquote>"Had our huge 3' tall by 8' long snowdrift plowed in no time for a great price! I've already given their number to family and friends!"</blockquote>
+    <cite>William K., Local Guide <span class="when">· 2 years ago</span></cite>
+    <p class="reply"><strong>Owner reply:</strong> Thank you for such a wonderful thing to say</p>
+  </article>
+
+  <article class="review">
+    <p class="stars" aria-label="5 stars">★★★★★</p>
+    <blockquote>"quality work and dependable! great to work with!"</blockquote>
+    <cite>Kenneth H. <span class="when">· 11 months ago</span></cite>
+  </article>
+
+  <article class="review">
+    <p class="stars" aria-label="5 stars">★★★★★</p>
+    <blockquote>"Great Company with great Prices"</blockquote>
+    <cite>Adam <span class="when">· 11 months ago</span></cite>
+  </article>
+
+  <article class="review">
+    <p class="stars" aria-label="5 stars">★★★★★</p>
+    <blockquote>"Josh did a great job! After that major wind storm I had some drifting that had to go and having to use my snow thrower I would have been on it for many hours. Josh knocked down the drifts cleaned it up and was done in less the a hour..."</blockquote>
+    <cite>R.R. <span class="when">· 4 years ago</span></cite>
+    <p class="reply"><strong>Owner reply:</strong> Thank you very much!</p>
+  </article>
+
+  <article class="review">
+    <p class="stars" aria-label="5 stars">★★★★★</p>
+    <blockquote>"OMG! Worst snow fall in decades in Palmer, Left messages at 7 different plow company's and no call backs except for Josh. He called back that night I left the message..."</blockquote>
+    <cite>Kerry S. <span class="when">· 3 years ago</span></cite>
+    <p class="reply"><strong>Owner reply:</strong> Thank you very much</p>
+  </article>
+</main>
+
+<footer>
+  <div class="wrap">Alaska.Land · Trapper Creek, Alaska · www.alaska.land</div>
+</footer>
+
+</body>
+</html>
