@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.alaska.land/sitemap.xml
+Sitemap: https://readysetrefurbish.github.io/Alaska.Land/sitemap.xml
